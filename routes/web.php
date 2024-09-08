@@ -12,4 +12,8 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-require __DIR__.'/auth.php';
+Route::view('todo', 'todo')
+    ->middleware(['auth'])
+    ->name('todo');
+
+require __DIR__ . '/auth.php';
